@@ -1,4 +1,5 @@
 import requests
+import json
 from bs4 import BeautifulSoup
 url = 'https://azbyka.ru/molitvoslov/akafist-slava-bogu-za-vsyo.html'
 r = requests.get(url)
@@ -55,4 +56,4 @@ while i < len(final_dict):
         i += 1
 
 final_tuple = (first_dict, final_dict)
-print(final_tuple)
+print(json.dumps(final_tuple,ensure_ascii=False))
