@@ -55,4 +55,3 @@ while i < len(final_dict):
 
 final_tuple = (first_dict, final_dict)
 print(final_tuple)
-a = input('Press Enter to exit...')
