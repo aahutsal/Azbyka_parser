@@ -3,6 +3,7 @@
 
   <xsl:strip-space elements="*"/>
 
+  <!-- XSLT tutorial: https://msiter.ru/tutorials/xslt -->
   <xsl:template match="//div[@class='article-single-content main-page-content']">
     <akafist>
       <title><xsl:value-of select="//div[@class='article-single-info']/h1/text()"/></title>
